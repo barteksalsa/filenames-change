@@ -23,8 +23,8 @@ def getVBSlinesForFile(fileName):
   commandLines = []
   commandLines.append("*** Rem File: " + fileName)
   commandLines.append("Set oApp = CreateObject(\"Powerpoint.Application\")")
-  commandLines.append("oApp.Presentations.Open(strCurDir & \"\\" " & \"content-rename.pptm\")")
-  commandLines.append("oApp.Presentations.Open(strCurDir & \"\\" " & " + fileName)
+  commandLines.append("oApp.Presentations.Open(strCurDir & \"\\" + pptMacroFile + "\")")
+  commandLines.append("oApp.Presentations.Open(strCurDir & \"\\" + fileName + "\")")
   commandLines.append("oApp.Run \"" + pptMacroFile + "\"!" + pptMacro + "\"")
   commandLines.append("oApp.ActivePresentation.Save")
   commandLines.append("oApp.Quit")
