@@ -3,7 +3,7 @@ import re
 
 pptMacroFile = "content-rename.pptm" # znajdz sobie skrypt
 pptMacro = "ReplaceSKBR" # taka jest na stale
-powerpointExt = "(\.pptx$)|(\.ppt$)"
+powerpointExt = "^[^~].*\.(pptx|ppt)$"
 batFile = "content-rename.bat"
 vbsFileName = "content-rename.vbs"
 
