@@ -24,4 +24,6 @@ for (old,new) in allFiles:
   file.write(command + "\r\n")
   #os.rename(old,new)
 
+file.write("pause \r\n")
+
 file.close()

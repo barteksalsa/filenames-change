@@ -10,6 +10,7 @@ vbsFileName = "content-rename.vbs"
 ''' create a bat file which will call the actual VBScript script '''
 batFile = open(batFile, 'w')
 batFile.write("cscript " + vbsFileName + "\r\n");
+batFile.write("pause \r\n")
 batFile.close()
 
 ''' produce lines from list '''
