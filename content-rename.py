@@ -25,7 +25,7 @@ def getVBSlinesForFile(fileName):
   commandLines.append("Set oApp = CreateObject(\"Powerpoint.Application\")")
   commandLines.append("oApp.Presentations.Open(strCurDir & \"\\" + pptMacroFile + "\")")
   commandLines.append("oApp.Presentations.Open(strCurDir & \"\\" + fileName + "\")")
-  commandLines.append("oApp.Run \"" + pptMacroFile + "\"!" + pptMacro + "\"")
+  commandLines.append("oApp.Run \"" + pptMacroFile + "!" + pptMacro + "\"")
   commandLines.append("oApp.ActivePresentation.Save")
   commandLines.append("oApp.Quit")
   commandLines.append("WScript.Sleep(2000)")
