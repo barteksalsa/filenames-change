@@ -21,7 +21,7 @@ def getLinesFromList(aList):
 ''' define command sequence for a single file '''
 def getVBSlinesForFile(fileName):
   commandLines = []
-  commandLines.append("*** Rem File: " + fileName)
+  commandLines.append("Rem *** File: " + fileName)
   commandLines.append("Set oApp = CreateObject(\"Powerpoint.Application\")")
   commandLines.append("oApp.Presentations.Open(strCurDir & \"\\" + pptMacroFile + "\")")
   commandLines.append("oApp.Presentations.Open(strCurDir & \"\\" + fileName + "\")")
