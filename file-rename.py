@@ -12,8 +12,8 @@ allFiles = []
 for path,dirs,files in os.walk("."):
   for fileName in files:
     if re.search(searchRegexp, fileName) != None:
-      fullFileName = os.path.join(path,fileName)
       fileNameReplaced = re.sub(searchRegexp, replaceText, fileName, count=1)
+      fullFileName = os.path.join(path,fileName)
       fullFileNameReplaced = os.path.join(path,fileNameReplaced)
       allFiles.append((fullFileName, fullFileNameReplaced))
     
